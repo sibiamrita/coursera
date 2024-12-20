@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-us" style="color: aliceblue; background-image: url('assets/about-us.jpg'); background-size: cover; background-position: center;">
+
+        <h1>About TravelBloom</h1>
+        <p>At TravelBloom, we are passionate about helping you discover your ideal travel destination, tailored to your unique interests and preferences. Whether you’re seeking the tranquility of a pristine beach, the rich history and culture of ancient temples, or the excitement of exploring vibrant cities and exotic landscapes, we’re here to guide you every step of the way.
+    
+            Our team of experienced travel experts has curated a diverse range of destinations, from serene coastal getaways to bustling urban hubs and hidden gems waiting to be explored. We understand that every traveler is different, which is why we offer personalized recommendations based on your travel style — whether it’s adventure, relaxation, cultural immersion, or family-friendly activities.
+            
+            Not sure where to go? Let us help you narrow down your choices. Whether it’s discovering a remote island paradise, hiking through breathtaking mountains, or indulging in the local cuisine in a bustling market, we’ll provide insider tips and expert advice to ensure your trip is nothing short of extraordinary.
+            
+            At TravelBloom, we believe that the journey is just as important as the destination. That’s why we are committed to creating unforgettable travel experiences that inspire, excite, and enrich your life. Let us help you turn your travel dreams into reality, with a seamless experience from start to finish. Wherever you want to go, we’re here to guide you toward the perfect destination.
+        </p>
+    
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; padding-top: 20px;">
+            <img src="assets/beach1.jpg" alt="Beach 1" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+            <img src="assets/beach2.jpg" alt="Beach 2" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+            <img src="assets/country1.jpg" alt="Country 1" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+            <img src="assets/country2.jpg" alt="Country 2" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+            <img src="assets/temple1.jpeg" alt="Temple 1" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+            <img src="assets/temple2.jpg" alt="Temple2" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/?lang=en&mx=2">Twitter</a> 
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+        <button onclick="bookNow()">Book Now</button>
+        <!--  modal-->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Booking Information</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" placeholder="Your ID" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

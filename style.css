@@ -1,0 +1,342 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('assets/hero.webp') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff8c00;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e07b00;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer button {
+    background-color: #ff8c00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+.destination {
+    margin: 20px;
+    text-align: center;
+}
+
+.destination h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.destination .images img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.about-us, .contact-us {
+    padding: 40px 20px;
+    text-align: center;
+        
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #d6812d; /* Orange background for better visibility */
+        border-radius: 10px; /* Rounded corners for a modern look */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        color: #000; /* Black text for good contrast */
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.recommendations {
+    background-color: rgba(255, 165, 0, 0.2); /* Light orange with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h2 {
+    font-size: 2em;
+    color: #FFA500; /* Orange color for the title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.destination {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly white background for each destination */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.destination h3 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+/* General Styles for Contact Form */
+.contact-us {
+    background-color: #f8f8f8;  /* Light background for contrast */
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+}
+
+.contact-us h1 {
+    text-align: center;
+    color: #333;  /* Dark gray for better readability */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us input, .contact-us textarea {
+    border: 1px solid #ddd;  /* Light border */
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;  /* Ensures padding and border are included in the element's total width */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-us input:focus, .contact-us textarea:focus {
+    border-color: #ff5722;  /* Orange border on focus */
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);  /* Soft orange glow */
+    outline: none;  /* Remove the default focus outline */
+}
+
+.contact-us input::placeholder, .contact-us textarea::placeholder {
+    color: #888;  /* Light gray placeholder text */
+}
+
+.contact-us button {
+    background-color: #ff5722;  /* Orange button */
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;  /* Ensures padding and border are included in the element's total width */
+}
+
+.contact-us button:hover {
+    background-color: #e64a19;  /* Darker orange on hover */
+}
+
+.contact-us button:active {
+    background-color: #d84315;  /* Even darker orange on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px;
+    }
+
+    .contact-us h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/*model*/
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be adjusted for responsiveness */
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #333;
+}
+
+.modal input[type="text"],
+.modal input[type="email"],
+.modal input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.modal input:focus {
+    border-color: #ff5722; /* Orange border on focus */
+    outline: none;
+}
+
+.modal button {
+    background-color: #ff5722; /* Orange button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #e64a19;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+}
